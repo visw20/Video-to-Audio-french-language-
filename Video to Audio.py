@@ -79,7 +79,7 @@
 
 
 
-#English text to french text 
+# English text to french text 
 
 # import speech_recognition as sr
 # from googletrans import Translator
@@ -227,6 +227,37 @@ audio = video.audio
 
 # Save audio to a file
 audio.write_audiofile(audio_output_path)
+
+
+
+#audio to text
+
+# import speech_recognition as sr
+
+# # Path to your audio file
+# audio_file = "C:/video to audio and Language transulation/french_audio.wav"
+
+# # Initialize recognizer
+# recognizer = sr.Recognizer()
+
+# # Load audio file using SpeechRecognition
+# with sr.AudioFile(audio_file) as source:
+#     audio_data = recognizer.record(source)  # Read the entire audio file
+
+# # Recognize (convert from speech to text)
+# try:
+#     # Using Google Web Speech API for speech-to-text in French
+#     french_text = recognizer.recognize_google(audio_data, language='fr-FR')  # Specify French language
+#     print("Transcription in French: ", french_text)
+
+# except sr.UnknownValueError:
+#     print("Google Web Speech API could not understand the audio.")
+# except sr.RequestError as e:
+#     print(f"Could not request results from Google Web Speech API; {e}")
+# except Exception as e:
+#     print(f"An error occurred: {e}")
+
+
 
 
 
